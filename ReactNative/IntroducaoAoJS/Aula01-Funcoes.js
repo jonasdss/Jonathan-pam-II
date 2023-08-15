@@ -58,13 +58,33 @@ console.log(raiz(4, 19))
 console.log(raiz(12, 19))
 
 const divisao = (v1, v2) =>{
+    let msg = ""
     if (v1 > v2) {
         let resultado = v1 / v2
-        console.log(resultado) 
+        msg = resultado
+        return msg
     }
-    return "insira um valor para v2 menor"
+    msg "insira um valor para v2 menor"
 
+    return 
 }
 
-divisao(10, 2)
-divisao(2, 10)
+console.log(divisao(10, 2))
+console.log(divisao(2, 20))
+
+
+const divisaoII = (v1, v2) =>{
+    if (v1 > v2) {
+        let resultado = v1 / v2
+        return resultado
+    }
+    return "insira um valor para v2 menor"
+    
+}
+
+console.log(divisaoII(10, 2))
+console.log(divisaoII(2, 20))
+
+
+
+
