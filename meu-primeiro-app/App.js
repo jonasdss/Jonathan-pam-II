@@ -1,21 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import {Text, View, StyleSheet } from 'react-native';
+import Contador from './components/Contador';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up</Text>
-      <Text>aaaaa</Text>
-      <StatusBar style="auto" />
+export default function App() { // função com nome app que n possui argumento
+  return(
+    <View>
+      <Contador />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
